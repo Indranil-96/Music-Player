@@ -1,0 +1,356 @@
+:root{
+	--body-background:#0a0031a1;
+}
+
+body{
+	background-color: #02001e;
+	opacity: 1;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.brand img{
+	height: 45px;
+	width: 45px;
+	
+}
+
+nav ul{
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+/*	height: 75px;*/
+	
+}
+
+.m{
+	margin-left: 0.8rem;
+}
+
+.search{
+	opacity: 0.4;
+	font-size: 9px;
+	color: white;
+	letter-spacing: 1px;
+	margin-left: 45rem;
+}
+
+@media(max-width:600px){
+	.search{
+		margin-left: 2rem !important;
+	}
+}
+
+@media(max-width:900px){
+	.search{
+		margin-left: 8rem;
+	}
+}
+
+@media(max-width:1200px){
+	.search{
+		margin-left: 12rem;
+	}
+}
+
+
+.bell{
+	margin: 2rem;
+}
+
+.logo img{
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+}
+
+/*   Upto this is navebar code*/
+
+
+
+/*from here it is starting container code*/
+
+
+
+.container{
+	min-height: 73.5vh;
+	width: 55%;
+	margin-left: 4rem;
+	color: whitesmoke;
+	display: inline-block;
+}
+
+
+
+.albam{
+	height: 14rem;
+	width: 55%;
+	margin-left: 4rem;
+	position: relative;
+	background-color: var(--body-background);
+	color: white;
+	display: inline-block;
+}
+
+@media(max-width:700px){
+	.albam{
+		width: 100%;
+	}
+
+	.container{
+		width: 100%;
+	}
+}
+
+.albam img{
+	height: 12rem;
+	width: 12rem;
+	margin-right:  1rem; 
+	opacity: 0.6;
+}
+
+.albam img:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.albam span{
+	position: absolute;
+	margin-top: 1rem;
+	font-size: 20px;
+	color: white;
+}
+
+.albam span p{
+	font-size: 14px;
+	opacity: 0.5;
+}
+
+.button{
+	background:linear-gradient(to right,#4100ff66,#9610b7);
+	cursor: pointer;
+	font-size: 15px;
+	width: 5.9rem;
+	height: 1.8rem;
+	border: rgb(150, 021, 85);
+	color: white;
+	left: 10px;
+}
+
+.button:hover{
+	opacity: 0.6;
+}
+
+h5{
+	display: flex;
+	margin-left:13rem;
+	font-size: 10px;
+	text-transform: inherit;
+	margin-top: 0.4rem;
+	position: sticky;
+}
+
+#Follow{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	position: relative;
+	margin-left: 22rem;
+	z-index: 1;
+	bottom: 2.5rem;
+
+}
+
+
+
+
+/* Here is the code for song List */
+
+.songlist{
+position:relative ;
+display: flex;
+align-items: center;
+height: 5rem;
+margin-top: .8rem;
+background-color: var(--body-background);
+cursor: pointer;
+}
+
+.songlist img{
+	height: 5rem ;
+	width: 6rem;
+	opacity: 0.6;
+	margin-left: 1rem;
+}
+
+.songlist img:hover{
+	opacity: 1;
+}
+
+.songlist span{
+	position: absolute;
+	margin-left: 9rem;
+}
+
+.songlist p{
+	font-size: 14px;
+	opacity: 0.5;
+}
+
+.heart{
+	position: absolute;
+	margin-left: 42rem;
+}
+
+.plus{
+	position: absolute;
+	margin-left: 44rem;
+}
+
+
+
+
+/*This is the music player controller*/
+.bottom{
+	height: 7rem;
+	background-color:#161515;
+	position: sticky;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: ghostwhite;
+	flex-direction: column;
+}
+
+.bottom img{
+	height: 6rem;
+	width: 6rem;
+	position: absolute;
+	left: 4rem;
+}
+.bottom p{
+	position: absolute;
+	left: 11rem;
+	top: 2.5rem;
+}
+
+#progress{
+	width: 35%;
+	cursor: pointer;
+}
+
+#progress span{
+	position: relative;
+	transform: scale(10px,10px);
+}
+
+.icon i {
+	cursor: pointer;
+    margin: 0.5rem 1.6rem 0.5rem 1.6rem;
+}
+
+.volume{
+	position: absolute;
+	right: 10.2rem;
+	top: 4rem;
+}
+
+#volumebar{
+	position: absolute;
+	right: 2rem;
+	top: 4rem;
+}
+
+
+
+
+
+/*Here is the code for aside section*/
+
+.aside{
+	min-height: 73vh;
+	width: 35%;
+	margin-right: 1.5rem;
+	float: right;
+	transform: translateY(-14.7rem);
+	position: relative;
+
+}
+
+.text{
+	color: white;
+	position: absolute;
+	right: 5rem;
+	font-size: 12px;
+	top: 0.4rem;
+}
+
+.heading{
+	height: 2rem;
+	width: 95%;
+	display: block;
+}
+
+.artist{
+	height: 4rem;
+	width: 95%;
+	position: relative;
+	margin-top: 1rem;
+}
+
+.artist img{
+	height: 4rem;
+	width: 4rem;
+}
+
+.artist p{
+	color: white;
+	position: absolute;
+	left: 6rem;
+	top: 1rem;
+}
+
+.heading2{
+	margin-top: 0.5rem;
+	color: white;
+	height: 2rem;
+	width: 95%;
+	display: block;
+}
+
+.heading2 p{
+	font-size: 12px;
+	position: absolute;
+	right: 1rem;
+}
+
+
+.artist2{
+	height: 2rem;
+	width: 95%;
+	position: relative;
+	margin-top: 1rem;
+}
+
+.artist2 img{
+	height: 2rem;
+	width: 2rem;
+}
+
+.artist2 p{
+	color: white;
+	position: absolute;
+	left: 6rem;
+	top: 0.5rem;
+}
+
+.artist2 i{
+	color:  white;
+	position: absolute;
+	right: 0.5rem;
+}
+
